@@ -1,0 +1,479 @@
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Lobster+Two&family=Poppins:wght@300&family=Satisfy&display=swap');
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #d0b1d0;
+background: radial-gradient(circle, rgba(239,140,134,1) 0%, rgba(3,76,101,1) 100%);
+}
+
+.menu{
+    display: none;
+}
+nav {
+    width: 100%;
+    display: flex;
+    font-size:1.4rem;
+    background-color:#fac493;
+    margin-bottom: 2em;
+    font-weight: 700;
+ 
+
+}
+
+nav div {
+    margin-top: 0rem;
+}
+.left-nav{
+    font-size: 1.5rem;
+    color:#034C65;
+}
+
+.center-nav ul {
+  margin: 0;
+}
+.center-nav ul  {
+    display: flex;
+    list-style-type: none;
+
+}
+.center-nav li{
+    margin: 20px;
+}
+.center-nav li a{
+text-decoration: none;
+color:#034C65;
+}
+.center-nav li a:hover .center-nav li a{
+    background-color: #034C65;
+    color:white;
+    color:white;
+}
+
+.right-nav {
+    position: absolute;
+    right: 12px;
+}
+
+.social-links a img {
+    margin: .3em;
+    width: 2.5%;
+    height: auto;
+}
+
+canvas {
+    margin-left: 20%;
+}
+.heading{
+    color:#EF8C86;
+    text-align: center;
+    font-size:2.2rem;
+}
+.project_heading{
+    color:#034C65;
+}
+.project_head{
+    background:#408298;
+    color:white;
+    border-radius: 8px;
+    padding: 6px;
+    font-size: 1.3rem;
+}
+hr{
+    width: 25%;
+    
+}
+section {
+    margin-bottom: 10%;
+}
+
+.home {
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+   font-family: Satisfy;
+   font-weight: 100;
+   font-size: 1.4rem;
+
+}
+
+.download_btn{
+    border-radius: 7px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #034C65;
+    background-color: #fac493;
+    height: 7vh;
+    width: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    border:1px solid #034C65;
+
+   
+}
+.right-home {
+    margin-right: 15%;
+
+}
+
+.profile {
+    width: 90%;
+    height: auto;
+}
+.text1_head{
+    color:#f79641;
+   
+    font-family: 'Antic Slab', serif;
+}
+/* type writer animation start */
+.text_1 {
+    animation: text1;
+  }
+  
+  .text_2 {
+    animation: text2;
+  }
+  
+  .text_1, .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(10, end);
+    animation-iteration-count: infinite;
+  }
+  
+  .text_1::after, .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+  
+  @keyframes text2 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    
+    60%, 90% {
+      width: 6.2em;
+    }
+  }
+  
+  @keyframes text1 {
+    0%, 50%, 100% {
+      width: 0;
+    }
+    10%, 40% {
+      width: 10em;
+    }
+  }
+  
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+/* type writer animation end */
+
+
+/* .skill_head{
+font-size: 1.4rem;
+text-align: center;
+} */
+/* .skills .skillspair {
+    max-width: 960px;
+    margin: auto;
+    display: flex;
+    
+} */
+
+canvas #skill_head {
+    text-align: center !important;
+}
+
+section .skills {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    font-family: 'Antic Slab', serif;
+}
+
+section .projects_section {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 80%;
+    margin: auto;
+    font-family: 'Antic Slab', serif;
+    margin-bottom: 2em;
+}
+.skill{
+    margin-top: -100px;
+    margin-bottom: 8em;
+}
+.skillname{
+    background-color: #034C65;
+    color:#EF8C86;
+    border-radius: 4px;
+    padding: 2px;
+    width: 90%;
+}
+.skill_percent{
+    /* color:#1be171; */
+    color:#034C65;
+}
+
+.skillname,
+.skill_percent {
+    text-align: center;
+}
+.skill:hover{
+    /* background-color: #4ad285; */
+    background-color: #EF8C86;
+    border-radius: 7px;
+    color:#034C65;
+/* color:#FCB677; */
+/* color:#C43D5A; */
+
+}
+
+.projects,
+.skill_list,
+.contact,.home {
+    display: grid;
+    gap: 1rem;
+}
+.left-home{
+    margin-left:2.3em;
+}
+@media (max-width:745px){
+    #nav{
+        display: none;
+    }
+    .right-nav{
+        display: none;
+    }
+    #nav-ul{
+        margin-top:40px;
+        display: block;
+    }
+    #social-link-id{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+        width:40px;
+        position:relative;
+        right: 2px;
+        
+    }
+    .menu img{
+        width:40px;
+    }
+    .text1_head{
+        font-size: 1.4rem;
+    }
+    canvas{
+        width:95%;
+    }
+
+    .project{
+        margin-left: -2rem;
+        
+    }
+    .email{
+        font-size: 1rem;
+    }
+    .email img{
+        width: 15px;
+    }
+    .contact-links a img{
+        width: 5%;
+        margin-left: 1rem;
+    }
+    footer .right-footer img{
+        width:10%;
+       
+    }
+    
+}
+@media (min-width: 600px) {
+    /* .right-nav{
+        display: none;
+    } */
+    
+    .projects,
+    .skill_list,
+    .contact,.home {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact {
+        grid-template-columns: repeat(1);
+    }
+    
+    
+    
+}
+
+@media (min-width: 900px) {
+
+    .projects,
+    .skill_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact,.home {
+       
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.project{
+    margin-top: -2em;
+    margin-bottom: 1.2em;
+}
+.project_head,.project_desc{
+    margin-left: 5px;
+}
+.project_desc{
+    font-family: poppins;
+    color:rgb(100, 99, 99);
+}
+.project:hover{
+    background-color: #408298;
+    color:#EF8C86;
+    border-radius: 7px;
+}
+.project:hover .project_head{
+    color:white;
+}
+
+.project:hover .project_desc{
+    color:white;
+}
+
+
+.project img {
+    width: 85%;
+    height: auto;
+    margin-left: 5px;
+}
+
+#amero {
+    width: 60%;
+    height: 50%;
+}
+
+.contact {
+
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+    font-family: 'Antic Slab', serif;
+}
+
+.contact input,
+textarea {
+    width: 35vw;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fdefe2;
+    font-family: 'Antic Slab', serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+
+}
+
+.contact table tr td{
+    font-weight: 700;
+}
+
+
+textarea {
+    height: auto;
+}
+
+input[type='submit'] {
+    border-radius: 7px;
+    margin-top: 2em;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    background-color: #EF8C86;
+    height: 40px;
+    width: 70%;
+    margin-left: 2.3em;
+    cursor:pointer;
+
+}
+input[type='submit']:hover{
+    color: #EF8C86;
+    background-color: white;
+}
+
+.projects {
+    margin-left: 3em;
+}
+
+.contact-left {
+    margin-top:2em; 
+    margin-left: 3em;
+}
+.contact-right{
+    margin-top:2em;
+    margin-right:2em;
+}
+footer{
+    width: 100%;
+    display: flex;
+    background-color: #EF8C86;
+}
+footer .left-footer{
+    width: 100%;
+    margin-left: 20%;
+}
+
+footer .right-footer{
+    margin-right: 10%;
+
+}
+.center-nav li a:hover .center-nav li a{
+    background-color: #034C65;
+    color:white;
+}
